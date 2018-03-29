@@ -1,6 +1,7 @@
 $(document).ready(function(){
     
     $("#searchMovies").click(function(){
+       $(this).addClass("rubberBand animated");
         return getMovies();
     });
      $("#inputMovies").keyup(function(e) {
@@ -32,7 +33,7 @@ function getMovies(){
         $.ajax(settings).done(function (response) {
             console.log(response);
             
-             var header = '<div class="blue" role="alert"><h4>Movies: ' + data.results[{title}]  + '</h4></div>'
+             var header = '<div class="blue" role="alert"><h4>Movies: ' + results[{title}]  + '</h4></div>'
              
              
              
