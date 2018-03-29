@@ -3,6 +3,11 @@ $(document).ready(function(){
     $("#searchMovies").click(function(){
         return getMovies();
     });
+     $("#inputMovies").keyup(function(e) {
+    if(e.keyCode == 13) {
+          return getMovies();
+     }
+}); 
     
 });
 
@@ -27,7 +32,7 @@ function getMovies(){
         $.ajax(settings).done(function (response) {
             console.log(response);
             
-             var header = '<div class="blue" role="alert"><h4>Movies: ' + data.results[title]  + '</h4></div>'
+             var header = '<div class="blue" role="alert"><h4>Movies: ' + data.results[{title}]  + '</h4></div>'
              
              
              
