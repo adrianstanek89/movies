@@ -1,0 +1,21 @@
+.cent{
+    
+    height: 38px;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    margin: auto;
+    display: inline;
+}
+.green{
+    background-color: #1b5e20;
+    color: white;
+}
+.in{
+    width: 250px;
+}
+h1{
+    color: white;
+}
